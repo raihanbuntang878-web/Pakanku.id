@@ -15,7 +15,15 @@ import {
 } from 'firebase/firestore';
 
 // --- FIREBASE INITIALIZATION ---
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+const firebaseConfig = {
+  apiKey: "AIzaSyCIS1GZk6x89ITAIAaxaHxg_w00mcv2J-k",
+  authDomain: "pakanku-app.firebaseapp.com",
+  projectId: "pakanku-app",
+  storageBucket: "pakanku-app.firebasestorage.app",
+  messagingSenderId: "600847552162",
+  appId: "1:600847552162:web:7c2e8b5c4612554ca291fb",
+  measurementId: "G-EZMM4VZWD8"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
